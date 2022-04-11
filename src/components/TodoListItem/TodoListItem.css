@@ -1,0 +1,13 @@
+.list-item{
+    margin-left: 200px;
+    padding-right: 200px;
+}
+.list-item:hover{
+    cursor: pointer;
+}
+.done {
+    text-decoration: line-through;
+}
+.important{
+    color: rgb(255, 32, 32);
+}
