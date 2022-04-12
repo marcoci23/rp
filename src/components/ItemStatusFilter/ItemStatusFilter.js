@@ -10,25 +10,24 @@ export default class ItemStatusFilter extends React.Component {
         {name: 'done', label: 'Done'}
     ]
 render(){
-    const {filter,name,onFilterChange} = this.props
+    const {filter,onFilterChange} = this.props
     const buttons = this.buttons.map(({name,label})=>{
+        const isActive = filter == name
+        const classs = isActive ? 'btn-dark' : 'btn-outline-secondary'
     return(
         <button 
-        className='btn btn-align status-group' 
+        className={`btn btn-align ${classs}`} 
         onClick={()=>onFilterChange(name)}
         key={name}
         >{label}</button>
     )
     })
 
-    const isActive = filter == name
-    const classs=isActive ? 'btn-dark' : 'btn'
-
     return(
         <div className='btn-filter'>
-            <div className= {classs}>
+            
         {buttons}
-    </div></div>
+    </div>
     )
 }
 

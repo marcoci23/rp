@@ -20,7 +20,6 @@ export default class TodoListItem extends React.Component {
 
     render(){
         const {label,onDeleted,onToggleImportant,onToggleDone,done,important} = this.props;
-
         let classNames = 'todo-list-item';
         if(done) {
             classNames += ' done';
@@ -31,14 +30,14 @@ export default class TodoListItem extends React.Component {
         return(
            <span className={classNames}>
                <button 
-               className='btn'
+               className='btn btn-outline-danger'
                onClick={onDeleted}
-               >Delete</button>
+               >Del</button>
 
                 <button 
-                className='btn'
+                className='btn btn-outline-danger'
                 onClick={onToggleImportant}
-                >!</button>
+                ><i class="bi bi-exclamation-lg"></i></button>
                 
                 <span 
                 onClick={onToggleDone}

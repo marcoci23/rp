@@ -1,0 +1,9 @@
+.menu{
+    display:flex;
+    justify-content: center;
+}
+.filter{
+    display: flex;
+    width: 635px;
+    align-items: center;
+}

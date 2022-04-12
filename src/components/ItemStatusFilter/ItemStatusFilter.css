@@ -1,13 +1,14 @@
 .btn-filter{
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 .status-group{
     width: 133px;
 }
 .btn-align{
     margin-right: 5px;
+    width: 100px
 }
 .btn-align:last-child{
     margin-right: 0px;

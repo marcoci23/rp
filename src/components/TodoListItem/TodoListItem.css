@@ -11,3 +11,14 @@
 .important{
     color: rgb(255, 32, 32);
 }
+.bi{
+    color: red;
+    
+}
+.btn-outline-danger{
+    width: 50px;
+    margin-right: 5px;
+}
+.btn-outline-danger:hover .bi{
+    color: white;
+}
