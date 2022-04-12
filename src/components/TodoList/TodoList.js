@@ -8,7 +8,7 @@ const TodoList=({todos, onDeleted, onToggleImportant, onToggleDone})=>{
         const {id , ...itemProps} = item;
 
         return(
-            <li key={item.id}
+            <li key={id}
              className='list-group-item'>
                 <TodoListItem 
                 {...itemProps} 

@@ -4,7 +4,7 @@ import './ItemAddForm.css'
 export default class ItemAddForm extends React.Component{
 
     state = {
-        label: ' ',
+        label: '',
 
     }
 

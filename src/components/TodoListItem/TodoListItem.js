@@ -32,12 +32,12 @@ export default class TodoListItem extends React.Component {
                <button 
                className='btn btn-outline-danger'
                onClick={onDeleted}
-               >Del</button>
+               ><i class="bi bi-trash-fill"></i></button>
 
                 <button 
                 className='btn btn-outline-danger'
                 onClick={onToggleImportant}
-                ><i class="bi bi-exclamation-lg"></i></button>
+                ><i className="bi bi-exclamation-lg"></i></button>
                 
                 <span 
                 onClick={onToggleDone}
